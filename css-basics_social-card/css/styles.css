@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+article {
+  background-color: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+img {
+  border-radius: 5%;
+}
+
+button {
+  border: none;
+  background-color: white;
+  color: #35a0f2;
+  padding: 0px;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.account {
+  color: #b5b5b5;
+}
