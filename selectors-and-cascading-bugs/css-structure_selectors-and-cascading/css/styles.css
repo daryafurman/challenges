@@ -88,13 +88,13 @@ footer a {
 }
 
 /* 7. These styles should apply to all paragraphs and all lists (please use a class selector) */
-FIX_ME {
+.text .list {
   outline: 2px dashed red;
   color: #2c3f3f;
 }
 
 /* 8. These styles should apply to all "notes" */
-FIX_ME {
+.text-note {
   outline: 2px dashed red;
   font-size: 0.8em;
   color: #808080;
