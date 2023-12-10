@@ -5,8 +5,10 @@ console.clear();
 // All console methods can be found on mdn for reference: https://developer.mozilla.org/en-US/docs/Web/API/console
 
 // 1. Store the sentence 'Happy coding!' in a variable named 'coding'.
+const coding = "Happy coding!";
 
 // 2. Display the variable 'coding' as a message in the console.
+console.log("", coding);
 
 // 3. Store the sentence 'Happy hacking!' in the variable named 'hacking'.
 
