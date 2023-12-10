@@ -13,3 +13,7 @@ darkModeButton.addEventListener("click", () => {
 lightModeButton.addEventListener("click", () => {
   bodyElement.classList.remove("dark");
 });
+
+toggleButton.addEventListener("click", () => {
+  bodyElement.classList.toggle("dark");
+});
