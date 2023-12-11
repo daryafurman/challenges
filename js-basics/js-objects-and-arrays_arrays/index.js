@@ -55,6 +55,8 @@ console.table(unshiftedPets);
 // Use the shift method to remove the first item from shiftedFruits.
 
 const shiftedFruits = ["apple", "banana", "mango"];
+shiftedFruits.shift();
+console.table(shiftedFruits);
 
 export {
   exampleArray,
