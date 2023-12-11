@@ -20,7 +20,7 @@ const firstNumber = numbers[0];
 // EXERCISE 4
 // Change the fruit stored at index 0 of fruits to mango.
 
-const fruits = ["apple", "banana", "grapefruit"];
+const fruits = ["mango", "banana", "grapefruit"];
 
 // EXERCISE 5
 // Change the value of nestedNumber to equal the fourth number of nestedNumbers using bracket notation.
