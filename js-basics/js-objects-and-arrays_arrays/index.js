@@ -27,7 +27,8 @@ const fruits = ["mango", "banana", "grapefruit"];
 
 const nestedNumbers = [10, [20, 30, [40, 50]]];
 
-const nestedNumber = "change me";
+const nestedNumber = nestedNumbers[1][2][0];
+console.table(nestedNumber);
 
 // EXERCISE 6
 // Put "rat" onto the end of petsWithPush variable by using the array method `.push()`.
