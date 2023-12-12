@@ -51,5 +51,16 @@ console.log("Sales: " + sales);
 */
 
 // --v-- write your code here --v--
+function logBookData() {
+  console.log("Title: " + title);
+  console.log("Author: " + author);
+  console.log("Rating: " + rating);
+  console.log("Sales: " + sales);
+}
 
+sales += 10;
+logBookData();
+
+sales += 10;
+logBookData();
 // --^-- write your code here --^--
