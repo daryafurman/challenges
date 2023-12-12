@@ -57,4 +57,10 @@ pizzaInput2.addEventListener("input", () => {
 // Task 3
 // define the function updateOutputColor here
 
-function updateOutputColor(size1, size2) {}
+function updateOutputColor(size1, size2) {
+  if (size2 < size1) {
+    outputSection.style.backgroundColor = "var(--red)";
+  } else {
+    outputSection.style.backgroundColor = "var(--green)";
+  }
+}
