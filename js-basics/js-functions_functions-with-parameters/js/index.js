@@ -37,7 +37,14 @@ greetMary();
 
 // --v-- write your code here --v--
 
-function greet() {}
+function greet(name) {
+  console.log("Welcome " + name + ",good to see you again!");
+}
+greet("Bob");
+
+greet("Alice");
+
+greet("Mary");
 
 // --^-- write your code here --^--
 
