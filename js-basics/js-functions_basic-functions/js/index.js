@@ -9,6 +9,12 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+function bookstore() {
+  const booktitle = "Book title";
+  const author = "Author of the book";
+  const rating = "Rating";
+  const numberofsales = "Number of sales";
+}
 
 // --^-- write your code here --^--
 
