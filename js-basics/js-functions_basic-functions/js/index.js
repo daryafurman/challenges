@@ -28,7 +28,18 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+console.log("Title: " + title);
+console.log("Author: " + author);
+console.log("Rating: " + rating);
+console.log("Sales: " + sales);
 
+sales += 10;
+rating = 4.5;
+
+console.log("Title: " + title);
+console.log("Author: " + author);
+console.log("Rating: " + rating);
+console.log("Sales: " + sales);
 // --^-- write your code here --^--
 
 /*
