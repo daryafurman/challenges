@@ -27,3 +27,4 @@ lowercaseButton.addEventListener("click", () => {
 });
 
 const secondInput = document.querySelector('[data-js="second-input"]');
+const switchButton = document.querySelector('[data-js="button-switch"]');
