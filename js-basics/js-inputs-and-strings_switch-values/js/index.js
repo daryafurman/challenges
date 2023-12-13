@@ -20,10 +20,12 @@ const lowercaseButton = document.querySelector('[data-js="button-lowercase"]');
 
 uppercaseButton.addEventListener("click", () => {
   firstInput.value = firstInput.value.toUpperCase();
+  secondInput.value = secondInput.value.toUpperCase();
 });
 
 lowercaseButton.addEventListener("click", () => {
   firstInput.value = firstInput.value.toLowerCase();
+  secondInput.value = secondInput.value.toLowerCase();
 });
 
 const secondInput = document.querySelector('[data-js="second-input"]');
