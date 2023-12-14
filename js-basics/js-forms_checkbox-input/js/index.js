@@ -11,12 +11,19 @@ function hideTosError() {
 function showTosError() {
   tosError.removeAttribute("hidden");
 }
+//we hide the TOS initially
+hideTosError();
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   // --v-- write your code here --v--
-
+  console.log("tosCheckbox is checked: ", tosCheckbox.checked);
+  const isChecked = tosCheckbox.checked;
+  if (isChecked != true) {
+    showTosError();
+    return;
+  }
   // --^-- write your code here --^--
 
   // eslint-disable-next-line no-alert
