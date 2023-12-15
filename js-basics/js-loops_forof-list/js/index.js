@@ -18,10 +18,10 @@ const programmingLanguages = [
 ];
 
 // --v-- write/change code here --v--
-for (ol of programmingLanguages) {
-  console.log(ol);
+for (const language of programmingLanguages) {
+  let li = document.createElement("li");
+  li.textContent = language;
+  ol.append(li);
 }
 
-document.body.append(ol);
-document.body.append(programmingLanguages);
 // --^-- write/change code here --^--
