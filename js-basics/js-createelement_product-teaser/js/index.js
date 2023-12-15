@@ -44,10 +44,16 @@ const cardProductHTML = `
       </div>
       <footer class="product__footer">
         <span class="product__price">${price}</span>
-        <button type="button" class="product__buy-button">Buy</button>
+        <button type="button" class="product__buy-button" id="new-buy-button">Buy</button>
       </footer>
       </article>
 
 `;
 
 document.body.innerHTML += cardProductHTML;
+
+const secondBuyButton = document.querySelector("#new-buy-button");
+
+secondBuyButton.addEventListener("click", () => {
+  console.log(`Product: ${name} cost ${price}`);
+});
