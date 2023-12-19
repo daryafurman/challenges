@@ -15,3 +15,7 @@ function showWelcomeMessage() {
 // Call handleUserLogin below!
 // regular function
 handleUserLogin(showWelcomeMessage);
+// arrow function
+handleUserLogin(() => {
+  showWelcomeMessage();
+});
