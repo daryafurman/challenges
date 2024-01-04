@@ -12,7 +12,7 @@ const languages = {
   IT: "Italian",
   NL: "Dutch",
   PT: "Portuguese",
-  RU: "Russian",
+  UA: "Ukrainian",
   ZH: "Chinese",
 };
 
@@ -21,7 +21,12 @@ select.name = "languages";
 main.append(select);
 
 // --v-- write/change code here --v--
-
+for (var option in languages) {
+  var oneOption = document.createElement("option");
+  oneOption.value = option;
+  oneOption.textContent = languages[option];
+  select.appendChild(oneOption);
+}
 // --^-- write/change code here --^--
 
 // Part 2: Creating a Navigation Bar
@@ -38,5 +43,12 @@ main.append(navElement);
 navElement.append(ul);
 
 // --v-- write/change code here --v--
-
+for (var key in nav) {
+  var li = document.createElement("li");
+  var a = document.createElement("a");
+  a.href = nav[key].href;
+  a.textContent = nav[key].text;
+  li.appendChild(a);
+  ul.appendChild(li);
+}
 // --^-- write/change code here --^--

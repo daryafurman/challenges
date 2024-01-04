@@ -4,7 +4,7 @@ const main = document.querySelector('[data-js="main"]');
 
 // Create a list from an array
 
-const ol = document.createElement("ol");
+let ol = document.createElement("ol");
 main.append(ol);
 
 const programmingLanguages = [
@@ -18,5 +18,10 @@ const programmingLanguages = [
 ];
 
 // --v-- write/change code here --v--
+for (const language of programmingLanguages) {
+  let li = document.createElement("li");
+  li.textContent = language;
+  ol.append(li);
+}
 
 // --^-- write/change code here --^--
