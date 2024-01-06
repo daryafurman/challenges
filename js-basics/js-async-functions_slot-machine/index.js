@@ -35,7 +35,7 @@ spinButton.addEventListener("click", async () => {
     ]);
     console.log(values);
 
-    const maxCount = getMaxCount(values);
+    const getMaxCount = getMaxCount(values);
 
     const newPoints = Score();
 
