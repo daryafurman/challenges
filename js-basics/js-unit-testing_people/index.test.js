@@ -48,9 +48,13 @@ test("getFirstNames() returns an array with the first names", () => {
   expect(result).toEqual(["Jane", "John", "Max", "Erika", "Luke"]);
 });
 
-test('getFullNames() returns an array with full names as strings, e.g. "Jane Doe"', () => {});
+test('getFullNames() returns an array with full names as strings, e.g. "Jane Doe"', () => {
+  const result = getFullNames(people);
+});
 
-test('getNameAndAge() returns an array of formatted strings like this: "Skywalker (23)"', () => {});
+test('getNameAndAge() returns an array of formatted strings like this: "Skywalker (23)"', () => {
+  expect(result).toEqual(["Doe", "Mustermann", "Musterfrau", "Skywalker"]);
+});
 
 test("getPeopleByAge() returns an array of people of a certain age", () => {});
 
