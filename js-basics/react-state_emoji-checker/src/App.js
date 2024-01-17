@@ -1,10 +1,19 @@
 import React from "react";
 import "./styles.css";
+import { useState } from "react";
 
 export default function App() {
-  let code = "?";
+  // let code = "?";
+  let [code, setCode] = useState("?");
 
   const validCode = "🐡🐠🐋";
+
+  function handleClick(emoji) {
+    setCode((code) => code + emoji);
+  }
+  function handleReset() {
+    setCode("");
+  }
 
   return (
     <div className="container">
@@ -12,7 +21,8 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            handleClick("🐡");
+            // console.log("Update Code!");
           }}
         >
           <span role="img" aria-label="Pufferfish">
@@ -22,7 +32,8 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            handleClick("🐋");
+            // console.log("Update Code!");
           }}
         >
           <span role="img" aria-label="Whale">
@@ -32,7 +43,8 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            handleClick("🐠");
+            // console.log("Update Code!");
           }}
         >
           <span role="img" aria-label="Clownfish">
@@ -44,7 +56,8 @@ export default function App() {
       <button
         type="button"
         onClick={() => {
-          console.log("Reset Code!");
+          handleReset("?");
+          // console.log("Reset Code!");
         }}
       >
         Reset
