@@ -1,17 +1,34 @@
 import React from "react";
 
-const EntriesSection = ({ entries }) => {
+const EntriesSection = () => {
   return (
-    <section>
-      <div className="tab-bar">{/* Add tab bar content here */}</div>
-      <div className="entry-list">
-        {entries.map((entry, index) => (
-          <div key={index}>
-            <h2>{entry.motto}</h2>
-            <p>{entry.notes}</p>
-            {/* Render other entry details */}
-          </div>
-        ))}
+    <section className="entries-section">
+      <Tabs>
+        <Tab active>
+          All Entries <Badge isActive>3</Badge>
+        </Tab>
+        <Tab>
+          Favorites <Badge>1</Badge>
+        </Tab>
+      </Tabs>
+      <div className="entries-section__entries">
+        <Entry
+          date="Feb 27, 2028"
+          motto="Thats life in the city"
+          notes="Si sine causa? quae fuerit causa, mox videro; interea hoc tenebo, si mihi. Et quidem se repellere, idque instituit docere sic omne animal, simul atque."
+        />
+        <Divider />
+        <Entry
+          date="Feb 26, 2028"
+          motto="Thats life in the city"
+          notes="Si sine causa? quae fuerit causa, mox videro; interea hoc tenebo, si mihi. Et quidem se repellere, idque instituit docere sic omne animal, simul atque."
+        />
+        <Divider />
+        <Entry
+          date="Feb 25, 2028"
+          motto="Thats life in the city"
+          notes="Si sine causa? quae fuerit causa, mox videro; interea hoc tenebo, si mihi. Et quidem se repellere, idque instituit docere sic omne animal, simul atque."
+        />
       </div>
     </section>
   );
