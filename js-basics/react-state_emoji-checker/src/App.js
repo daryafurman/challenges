@@ -21,6 +21,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
+            handleReset("");
             handleClick("🐡");
             // console.log("Update Code!");
           }}
@@ -56,7 +57,8 @@ export default function App() {
       <button
         type="button"
         onClick={() => {
-          handleReset("?");
+          setCode();
+          handleReset("");
           // console.log("Reset Code!");
         }}
       >
@@ -64,7 +66,7 @@ export default function App() {
       </button>
       <h2>{code}</h2>
 
-      {code === validCode && <p>Valid code!</p>}
+      {setCode === validCode && <p>Valid code!</p>}
     </div>
   );
 }
