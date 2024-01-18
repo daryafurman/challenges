@@ -1,14 +1,10 @@
-import { useState } from "react";
-
-export default function Form() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-
+export default function Form({ onCreateUser }) {
   function handleSubmit(event) {
     event.preventDefault();
     const formData = event.target.elements;
-    setName(formData.name.value);
-    setEmail(formData.email.value);
+    // console.log(formData.name.value);
+    // console.log(formData.email.value);
+    onCreateUser(formData.name.value, formData.email.value);
     event.target.reset();
   }
 
@@ -19,9 +15,9 @@ export default function Form() {
       onSubmit={handleSubmit}
     >
       <h2 id="user-details">Please enter your details here!</h2>
-      <label htmlFor="name">Name: {name}</label>
+      <label htmlFor="name">Name: </label>
       <input id="name" name="name" type="text" placeholder="John Doe" />
-      <label htmlFor="email">Email: {email}</label>
+      <label htmlFor="email">Email: </label>
       <input id="email" name="email" type="email" placeholder="john@doe.com" />
       <button className="form__submit-button" type="submit">
         Submit
