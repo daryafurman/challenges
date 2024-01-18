@@ -1,4 +1,9 @@
 import React from "react";
+import Tab from "./Tabs";
+import Tabs from "./Tab";
+import Badge from "./Badge";
+import Entry from "./Entry";
+import Divider from "./Divider";
 
 const EntriesSection = () => {
   return (
