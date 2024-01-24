@@ -3,9 +3,7 @@ import Image from "next/image";
 import { volumes } from "../../resourses/lib/data.js";
 
 export default function TheTwoTowers() {
-  const TheTwoTowers = volumes.find(
-    ({ slug }) => slug === "the-fellowship-of-the-ring"
-  );
+  const theTwoTowers = volumes.find(({ slug }) => slug === "the-two-towers");
 
   return (
     <>
@@ -13,14 +11,17 @@ export default function TheTwoTowers() {
         <h3>Home</h3>
       </Link>
       <section>
-        <Link href="/volumes/the-two-towers">
+        <Link href="/volumes/the-fellowship-of-the-ring">
+          <h4>Previous book </h4>
+        </Link>
+        <Link href="/volumes/the-return-of-the-king">
           <h4>Next book</h4>
         </Link>
       </section>
-      <h1>{TheReturnOfTheKing.title}</h1>
-      <p>{TheReturnOfTheKing.description}</p>
+      <h1>{theTwoTowers.title}</h1>
+      <p>{theTwoTowers.description}</p>
       <ul>
-        {TheReturnOfTheKing.books.map((book, i) => {
+        {theTwoTowers.books.map((book, i) => {
           return (
             <li key={i}>
               <h3>{book.ordinal}:</h3>
@@ -30,10 +31,10 @@ export default function TheTwoTowers() {
         })}
       </ul>
       <Image
-        src={`${TheReturnOfTheKing.cover}`}
+        src={`${theTwoTowers.cover}`}
         width={140}
         height={230}
-        alt={TheReturnOfTheKing.title}
+        alt={theTwoTowers.title}
       />
     </>
   );

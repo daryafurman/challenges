@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { volumes } from "../../resources/lib/data.js";
+import { volumes } from "../../resourses/lib/data.js";
 
 export default function theReturnOfTheKing() {
   const theReturnOfTheKing = volumes.find(
-    ({ slug }) => slug === "the-fellowship-of-the-ring"
+    ({ slug }) => slug === "the-return-of-the-king"
   );
 
   return (
